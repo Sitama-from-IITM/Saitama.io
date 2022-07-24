@@ -1,0 +1,126 @@
+h1 {
+    font-family: 'Dancing Script', cursive;
+    /* padding: 0 20%; */
+    margin: 8% 0 5% 35%;
+}
+
+form {
+    padding: 2% 15%;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(238, 129, 129);
+    border-radius: 4px;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    color: white;
+}
+
+form input:focus {
+    border-color: rgb(28, 24, 24);
+}
+
+.upper-container {
+    display: flex;
+    flex-direction: row;
+}
+
+fieldset {
+    border: 2px solid black;
+    width : 40vw;
+    border: 2px solid rgb(238, 129, 129);
+    border-radius: 4px;
+}
+
+fieldset legend {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+fieldset input {
+    color: #151a1a;
+    font-size: 15px;
+}
+
+#inputButton {
+    font-family: 'Cormorant SC', serif;
+    color: red;
+}
+
+fieldset input:hover {
+    background-color: white;
+}
+
+fieldset div label {
+    font-family: 'Cormorant Upright', serif;
+}
+
+.content {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    margin: 2% auto;
+}
+
+/* Zebra-stripes */
+table tbody tr:nth-child(odd) {
+    background: rgba(217, 175, 217);
+}
+
+table tbody tr:hover {
+    background: #ddd;
+}
+
+/* center elements */
+body {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-repeat: no-repeat;
+}
+
+body div img{
+    padding: 0 20% 0;
+    width: 90%;
+}
+
+.tableHead {
+    font-family: 'Cormorant SC', serif;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin: 5% auto;
+    }
+
+    .upper-container {
+        flex-direction: column;
+    }
+
+    .upper-container img {
+        margin: 5% auto;
+        display: block;
+        max-width: 50%;
+        max-height: 90%;
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 627px) {
+    h1 {
+        font-size: 25px;
+    }
+}

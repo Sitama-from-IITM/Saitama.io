@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Mochiy+Pop+One&family=Cormorant+Upright&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>LIBRARY APP</title>
+
+  </head>
+
+  <body>
+
+    <div class="upper-container">
+
+      <div class="heading">
+        <h1>BOOK LIBRARY</h1>
+        <img src="img/read.png"/>
+      </div>
+  
+      <form id="book-form">
+        <fieldset>
+          <legend>Book Details:</legend>
+          <div class="form-group">
+              <label for="title">Title</label><br>
+              <input type="text" class="form-control" id="title">
+          </div>
+          <div class="form-group">
+              <label for="author">Author</label><br>
+              <input type="text" class="form-control" id="author">
+          </div>
+          <div class="form-group">
+              <label for="genre">Genre</label><br>
+              <input type="text" class="form-control" id="genre">
+          </div>
+          <div class="form-group">
+              <label for="publication">Publication</label><br>
+              <input type="text" class="form-control" id="publication">
+          </div>
+          <input id="inputButton" type="submit" value="Add Book">
+      </fieldset>
+      </form>
+
+    </div>
+
+    <hr>
+
+    <div class="content">
+
+      <table class="table">
+
+        <thead class="tableHead">
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Publication</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody id="book-list">
+          <!-- elements will be addeed by js -->
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
